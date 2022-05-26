@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="bg" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PH's excellence honey</title>
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/template.css') }}">
+    
+  </head>
+  <body>
+    
+    <header>
+      <div class="container">
+        <h1 class="logo"><a href="{{ url_for('home') }}"><img src="{{url_for('static', filename='images/logo.webp')}}"></a></h1>
+        <strong><nav>
+          <ul class="menu_1">
+            <li><a href="{{ url_for('home') }}">За нас</a></li>
+            <li><a href="{{ url_for('shop') }}">Магазин</a></li>
+            <li><a href="{{ url_for('contacts') }}">Контакти</a></li>
+            <li><a href="{{ url_for('partners') }}">Партньори</a></li>
+            <li><input type="text" placeholder="Search.."></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+    
+{% block content %}
+{% endblock %}
+    <h2>
+        {% block footer %}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-twitter"></a><br>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">&copy;Copyright 2021 by Peter Hristov.</a>
+        {% endblock %}
+      </h2>
+  </body>
+</html>

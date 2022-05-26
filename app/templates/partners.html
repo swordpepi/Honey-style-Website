@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="bg" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PH's excellence honey</title>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+    <fieldset class="partner_container">
+      <span class="partners_main">
+        <h1 class="partner_header">Ние работим с най-добрите <br>партньори</h1>
+        <ul class="partner_images">
+          <li><img class="partner_images" src="{{url_for('static', filename='images/partner.jpg')}}"></li>
+          <li><img class="partner_images" src="{{url_for('static', filename='images/partner2.png')}}"></li>
+          <li><img class="partner_images" src="{{url_for('static', filename='images/partner3.png')}}"></li>
+
+        </ul>
+      </span>
+      <p class="partner_description">Ние сме една от челните компаний в сферата на продажбата на мед в България, но този успех беше единствено достигнат с помоща на нашите партньори, които ни подкрепяха до последния момент.</p>
+
+    </fieldset>
+    
+    {% endblock %}
+  </body>
+</html>

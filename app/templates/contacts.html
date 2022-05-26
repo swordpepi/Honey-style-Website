@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="bg" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PH's excellence honey</title>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+    
+    <h1 class="contact-header">СВЪРЖЕТЕ СЕ С НАС!</h1>
+    <p class="contact-paragraph">Ако имате някакви въпроси, не се страхувайте да се свържете с нас!</p>  
+    <div class="contact-form">
+      <form action="action_page.php">
+    
+        <label for="fname"></label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname"></label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country"></label>
+        <select id="country" name="country">
+          <option value="Bulgaria">Bulgaria</option>
+          <option value="Serbia">Serbia</option>
+          <option value="Afghanistan">Afghanistan</option>
+        </select>
+    
+        <label for="subject"></label>
+        <textarea id="subject" name="subject" placeholder="Reason of contact" style="height:200px"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+        
+      </form>
+    </div>
+    <p class="personal-info">Можете да се свържете с нас също и тук:<br>
+      <address class="address-info">
+      <a href="https://www.google.com/maps?ll=71.963648,102.440546&z=16&t=m&hl=en&gl=BG&mapclient=embed&q=Chatanga+Krasnoyarsk+Krai+Russia+647460">Krasnoyarsk Krai 647460</a><br>
+      
+      <a href="mailto:peter.hristov03@abv.bg">peter.hristov03@abv.bg</a><br>
+      <a href="tel:+0886927011">(+359) 88-692-7011</a>
+      </address>
+    </p>
+    <iframe class ="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4941.213634656403!2d102.43185815606687!3d71.9640331466929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5b413f03abb69a45%3A0xbf805765784e8051!2sChatanga%2C%20Krasnoyarsk%20Krai%2C%20Russia%2C%20647460!5e0!3m2!1sen!2sbg!4v1637857346763!5m2!1sen!2sbg" margin-top=100px width=100% height="650px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    {% endblock %}
+  </body>
+</html>

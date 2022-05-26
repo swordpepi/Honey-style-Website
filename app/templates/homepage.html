@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="bg" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PH's excellence honey</title>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+    
+    <div class="picture_bee">
+      <img src="{{url_for('static', filename='images/honeycomb.png')}}"> 
+      <p class="homepage_p">ОТКРИЙТЕ ЕДИН НОВ НЕЗЕМЕН СВЯТ</p>
+      <p class="homepage_p_foot">За любителите на пчелите, от любителите на пчелите</p>
+    </div> 
+
+    <div class="product_showcase">
+      <nav>
+        <ul class="product_line">
+          <li><a href="replacethis"><img src="{{url_for('static', filename='images/black.webp')}}" alt="Buckwheat"><figcaption>Buckwheat Honey<br>20.00лв</figcaption></a></li>
+          <li><a href="replacethis"><img src="{{url_for('static', filename='images/classic.webp')}}" alt="Buckwheat"><figcaption>Sourwood Honey<br>35.00лв</figcaption></a></li>
+          <li><a href="replacethis"><img src="{{url_for('static', filename='images/yellowish.webp')}}" alt="Buckwheat"><figcaption>Manuka Honey<br>25.00лв</figcaption></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="box">
+      <img class="homepage_description_picture"src="{{url_for('static', filename='images/honeyman.png')}}">
+        <h1 class="header_in_picture">НАУЧЕТЕ ПОВЕЧЕ ЗА НАШАТА КОМПАНИЯ</h1><br>
+        <h1 class="paragraph_in_picture">От кошерите до пчелните пити, ние сме очаровани от света на медоносните пчели. Започвайки през 2003 г., където купихме първия си кошер в София, бавно прераснахме в това, което сме днес: процъфтяващ бизнес, обслужващ цялата общност. Разгледайте нашите уникални продукти, научете за нашите програми или просто резервирайте обиколка днес!</h1><br>
+      </div>
+
+    {% endblock %}
+
+  </body>
+</html>
